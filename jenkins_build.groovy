@@ -1,5 +1,4 @@
 //Declarative pipeline
-//scripted pipeline
 pipeline{
     agent any 
     stages{
@@ -8,7 +7,7 @@ pipeline{
                     println "Downloading build code from S3"
             }
         }
-        stage("copy file to tomcat") {
+        stage("copy file to tomcat web server") {
             steps {
                 println "Deploying build code to tomcat server"
             }
